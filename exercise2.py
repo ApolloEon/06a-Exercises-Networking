@@ -20,7 +20,11 @@ def multiply(a, b):
 
 def divide(a, b):
 	"""
-	
+	divide(4,2)
+2
+divide('a', 2)
+a/2
+divide(2,0)
 	
 	
 	"""

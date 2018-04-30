@@ -17,54 +17,187 @@ If you run into trouble, Google is your friend; there should be a lot of availab
 hostname
 
 
-
+DESKTOP-CDGS35I
 
 ----------------------------------
 netstat
 
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:62576        DESKTOP-CDGS35I:62577  ESTABLISHED
+  TCP    127.0.0.1:62577        DESKTOP-CDGS35I:62576  ESTABLISHED
+  TCP    127.0.0.1:62578        DESKTOP-CDGS35I:62579  ESTABLISHED
+  TCP    127.0.0.1:62579        DESKTOP-CDGS35I:62578  ESTABLISHED
 
 
 
 ----------------------------------
 ipconfig /all
 
+  Host Name . . . . . . . . . . . . : DESKTOP-CDGS35I
+   Primary Dns Suffix  . . . . . . . :
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : indiana.edu
 
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Qualcomm Atheros AR8151 PCI-E Gigabit Ethernet Controller (NDIS 6.20)
+   Physical Address. . . . . . . . . : D8-97-BA-47-D6-01
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : 12-10-B3-76-B0-E5
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : indiana.edu
+   Description . . . . . . . . . . . : Qualcomm Atheros AR956x Wireless Network Adapter
+   Physical Address. . . . . . . . . : 30-10-B3-76-B0-E5
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:18e8:2:28b6:85c9:9884:bd32:1240(Preferred)
+   Temporary IPv6 Address. . . . . . : 2001:18e8:2:28b6:2031:b7c9:eb01:550b(Preferred)
+   Link-local IPv6 Address . . . . . : fe80::85c9:9884:bd32:1240%13(Preferred)
+   IPv4 Address. . . . . . . . . . . : 149.160.132.230(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.192.0
+   Lease Obtained. . . . . . . . . . : Sunday, April 29, 2018 03:43:41 PM
+   Lease Expires . . . . . . . . . . : Sunday, April 29, 2018 08:02:33 PM
+   Default Gateway . . . . . . . . . : fe80::18e8:2:28b6:1%13
+                                       149.160.128.1
+   DHCP Server . . . . . . . . . . . : 10.79.1.224
+   DHCPv6 IAID . . . . . . . . . . . : 70258867
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-20-86-AF-93-D8-97-BA-47-D6-01
+   DNS Servers . . . . . . . . . . . : 10.79.1.1
+                                       10.234.220.20
+                                       10.79.1.2
+   Primary WINS Server . . . . . . . : 129.79.1.200
+   Secondary WINS Server . . . . . . : 129.79.5.200
+                                       134.68.220.14
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Tunnel adapter Local Area Connection* 12:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Teredo Tunneling Adapter
+   Physical Address. . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:0:9d38:6ab8:1442:471:6a5f:445a(Preferred)
+   Link-local IPv6 Address . . . . . : fe80::1442:471:6a5f:445a%10(Preferred)
+   Default Gateway . . . . . . . . . :
+   DHCPv6 IAID . . . . . . . . . . . : 167772160
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-20-86-AF-93-D8-97-BA-47-D6-01
+   NetBIOS over Tcpip. . . . . . . . : Disabled
 
 
 ----------------------------------
 nslookup www.iub.edu
 
 
+Server:  ns6.iu.edu
+Address:  10.79.1.1
 
+Name:    www.iub.edu
+Addresses:  129.79.78.186
+          129.79.78.185
 
 ----------------------------------
 nslookup www.google.com
 
 
+Server:  ns6.iu.edu
+Address:  10.79.1.1
 
+Non-authoritative answer:
+Name:    www.google.com
+Addresses:  2607:f8b0:4009:805::2004
+          172.217.8.196
 
 ----------------------------------
 ping www.iub.edu
 
+Pinging www.iub.edu [129.79.78.185] with 32 bytes of data:
+Reply from 129.79.78.185: bytes=32 time=1ms TTL=61
+Reply from 129.79.78.185: bytes=32 time=1ms TTL=61
+Reply from 129.79.78.185: bytes=32 time=1ms TTL=61
+Reply from 129.79.78.185: bytes=32 time=1ms TTL=61
 
+Ping statistics for 129.79.78.185:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 1ms, Average = 1ms
 
 
 ----------------------------------
 ping www.google.com
 
+Pinging www.google.com [2607:f8b0:4009:810::2004] with 32 bytes of data:
+Reply from 2607:f8b0:4009:810::2004: time=15ms
+Reply from 2607:f8b0:4009:810::2004: time=9ms
+Reply from 2607:f8b0:4009:810::2004: time=8ms
+Reply from 2607:f8b0:4009:810::2004: time=8ms
 
+Ping statistics for 2607:f8b0:4009:810::2004:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 15ms, Average = 10ms
 
 
 ----------------------------------
 tracert www.iub.edu
 
+Pinging www.google.com [2607:f8b0:4009:810::2004] with 32 bytes of data:
+Reply from 2607:f8b0:4009:810::2004: time=15ms
+Reply from 2607:f8b0:4009:810::2004: time=9ms
+Reply from 2607:f8b0:4009:810::2004: time=8ms
+Reply from 2607:f8b0:4009:810::2004: time=8ms
 
+Ping statistics for 2607:f8b0:4009:810::2004:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 8ms, Maximum = 15ms, Average = 10ms
+
+C:\Users\Acer>tracert www.iub.edu
+
+Tracing route to www.iub.edu [129.79.78.185]
+over a maximum of 30 hops:
+
+  1     3 ms     8 ms     1 ms  149.160.128.2
+  2     1 ms     2 ms     1 ms  ae-15.0.br2.bldc.net.uits.iu.edu [134.68.3.74]
+  3     3 ms     3 ms     3 ms  ae-33.932.dcr3.bldc.net.uits.iu.edu [134.68.3.129]
+  4     1 ms     1 ms     1 ms  zeus2-iub.gateway.indiana.edu [129.79.78.185]
+
+Trace complete.
 
 
 ----------------------------------
 tracert www.google.com
 
+Tracing route to www.google.com [2607:f8b0:4009:810::2004]
+over a maximum of 30 hops:
 
+  1     5 ms     2 ms     9 ms  ae-20.2230.cr5.bldc.net.uits.iu.edu [2001:18e8:2:28b6::2]
+  2     1 ms     4 ms     1 ms  ae-15.0.br2.bldc.net.uits.iu.edu [2001:18e8:3:f016::2]
+  3     3 ms     3 ms     3 ms  2001:18e8:ff00:90::1
+  4    28 ms     7 ms    20 ms  2001:18e8:ff00:13::1
+  5     8 ms     8 ms     8 ms  2001:18e8:ffff:10::1
+  6     *       10 ms     8 ms  2001:18e8:ffff:10::2
+  7     8 ms     8 ms     8 ms  google-peer-equinix.wiscnet.net [2001:4e0:0:3104::2]
+  8     8 ms     8 ms     8 ms  2001:4860:0:1010::1
+  9     8 ms    12 ms     8 ms  2001:4860:0:1::89
+ 10     8 ms     8 ms     8 ms  ord37s09-in-x04.1e100.net [2607:f8b0:4009:810::2004]
+
+Trace complete.
 
 
 ----------------------------------
@@ -73,3 +206,4 @@ telnet esqsoft.com 80
 GET /examples/troubleshooting-http-using-telnet.htm HTTP/1.1
 host: esqsoft.com
 
+It said it wasn't a recognized internal or external command.
